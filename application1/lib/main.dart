@@ -6,7 +6,7 @@ void main(){
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: LoginPage(),
+      home: HomePage(),
     )
   );
 
@@ -28,6 +28,13 @@ class HomePage extends StatelessWidget {
             Column(
               children: <Widget>[
                 Text("WellCome", style: TextStyle(
+                    shadows: <Shadow>[
+                      Shadow(
+                        offset: Offset(2.0, 2.0),
+                        blurRadius: 6.0,
+                        color: Colors.greenAccent,
+                      ),
+                    ],
                   fontWeight: FontWeight.bold,
                   fontSize: 30
             ),),
@@ -44,7 +51,7 @@ class HomePage extends StatelessWidget {
               height: MediaQuery.of(context).size.height / 3,
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage('assets/images/undraw_Login_v483.png')
+                  image: AssetImage('assets/images/undraw_rasa.png')
                 )
               ),
             ),
@@ -81,7 +88,7 @@ class HomePage extends StatelessWidget {
                     minWidth: double.infinity,
                     height: 50,
                     onPressed: () {},
-                    color: Colors.blueAccent,
+                    color: Colors.greenAccent,
                     elevation: 0,
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(50)

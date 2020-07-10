@@ -14,7 +14,7 @@ class LoginPage extends StatelessWidget {
           onPressed: () {
             Navigator.pop(context);
           },
-          icon: Icon(Icons.arrow_back_ios, size: 20, color: Colors.black,),
+          icon: Icon(Icons.arrow_back_ios, size: 17, color: Colors.black,),
         ),
       ),
       body: Container(
@@ -28,10 +28,17 @@ class LoginPage extends StatelessWidget {
                 Column(
                   children: <Widget>[
                     Text("Login", style: TextStyle(
+                      shadows: <Shadow>[
+                        Shadow(
+                          offset: Offset(2.0, 2.0),
+                          blurRadius: 6.0,
+                          color: Colors.greenAccent,
+                        ),
+                      ],
                       fontSize: 25,
                       fontWeight: FontWeight.bold,
                     ),),
-                    SizedBox(height: 10,),
+                    SizedBox(height: 5,),
                     Text("Login to your account", style: TextStyle(
                       fontSize: 10,
                       color: Colors.grey[700]
@@ -50,7 +57,7 @@ class LoginPage extends StatelessWidget {
                 ),
 
                 Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 40),
+                  padding: EdgeInsets.symmetric(horizontal: 35),
                   child:  Container(
                     padding: EdgeInsets.only(top: 1, left: 1),
                     decoration: BoxDecoration(
@@ -64,9 +71,9 @@ class LoginPage extends StatelessWidget {
                     ),
                     child: MaterialButton(
                       minWidth: double.infinity,
-                      height: 50,
+                      height: 45,
                       onPressed: () {},
-                      color: Colors.blueAccent,
+                      color: Colors.greenAccent,
                       elevation: 0,
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(50)
@@ -91,10 +98,10 @@ class LoginPage extends StatelessWidget {
               ],
             ),
             Container(
-              height: MediaQuery.of(context).size.height / 5,
+              height: MediaQuery.of(context).size.height / 3.5,
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage('assets/images/undraw_authentication_fsn5.png'),
+                  image: AssetImage('assets/images/undraw_unlock_24mb.png'),
                   fit: BoxFit.cover
                 )
               ),
@@ -128,7 +135,7 @@ Widget makeInput({label, obscureText = false}) {
           ),
         ),
       ),
-      SizedBox(height: 30,),
+      SizedBox(height: 16,),
     ],
   );
 }
