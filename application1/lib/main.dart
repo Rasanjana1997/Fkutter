@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hexcolor/hexcolor.dart';
 import 'package:flutter/widgets.dart';
 import 'package:application1/login.dart';
 
@@ -18,6 +19,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
     body: SafeArea(
       child: Container(
+        color: Hexcolor('#14342B'),
         width: double.infinity,
         height: MediaQuery.of(context).size.height,
         padding: EdgeInsets.symmetric(horizontal: 30, vertical: 50),
@@ -32,7 +34,7 @@ class HomePage extends StatelessWidget {
                       Shadow(
                         offset: Offset(2.0, 2.0),
                         blurRadius: 6.0,
-                        color: Colors.greenAccent,
+                        color: Hexcolor('#14342B'),
                       ),
                     ],
                   fontWeight: FontWeight.bold,
@@ -51,7 +53,7 @@ class HomePage extends StatelessWidget {
               height: MediaQuery.of(context).size.height / 3,
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage('assets/images/undraw_rasa.png')
+                  image: AssetImage('assets/images/newApp2.png')
                 )
               ),
             ),
