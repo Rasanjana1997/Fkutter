@@ -31,7 +31,7 @@ class HomePage extends StatelessWidget {
           children: <Widget>[
             Column(
               children: <Widget>[
-                FadeAnimation(1,Text("WellCome", style: TextStyle(
+                FadeAnimation(1,Text("WelCome", style: TextStyle(
                     shadows: <Shadow>[
                       Shadow(
                         offset: Offset(2.0, 2.0),
@@ -55,7 +55,7 @@ class HomePage extends StatelessWidget {
               height: MediaQuery.of(context).size.height / 3,
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage('assets/images/newApp2.png')
+                  image: AssetImage('assets/images/newApp4.jpg')
                 )
               ),
             )),
