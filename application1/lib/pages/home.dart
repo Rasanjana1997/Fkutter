@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:application1/custom_widgets/profile_button.dart';
+import 'package:application1/UserProfile.dart';
 
 class UserHomePage extends StatefulWidget {
   @override
@@ -38,13 +39,13 @@ class _UserHomePageState extends State<UserHomePage> {
                               radius: 85.0,
                               backgroundColor: Colors.white70,
                               child: CircleAvatar(
-                                backgroundImage: AssetImage('assets/images/user.jpg'),
+                                backgroundImage: AssetImage('assets/images/newApp5.jpg'),
                                 radius: 80.0,
                               ),
                             ),
                           ),
                           SizedBox(height: 10.0,),
-                          Text('Sarah Jones', style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 24.0),),
+                          Text('97 Asiri', style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 24.0),),
                           SizedBox(height: 10.0,),
                         ],
                       ),
@@ -263,7 +264,7 @@ class _UserHomePageState extends State<UserHomePage> {
                     iconData: Icons.home,
                     string: 'My Profile',
                     onPressed: (){
-                      print('Button 1');
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => UserProfilePage()));
                     },
                   ),
                   CustomButton(

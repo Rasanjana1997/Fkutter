@@ -2,15 +2,14 @@ import 'package:application1/animation/FadeAnimation.dart';
 import 'package:application1/login.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'pages/home.dart';
 import 'package:application1/signUp.dart';
-
+import 'package:application1/UserProfile.dart';
 
 void main(){
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      home: UserProfilePage(),
     )
   );
 
@@ -41,7 +40,8 @@ class HomePage extends StatelessWidget {
                     ],
                   fontWeight: FontWeight.bold,
                   fontSize: 30
-            ),)),
+            ),),
+                ),
                 SizedBox(height: 20,),
                 FadeAnimation(1.2, Text("Automatic identity verification that enable you to verify your identity",
                 textAlign: TextAlign.center,
