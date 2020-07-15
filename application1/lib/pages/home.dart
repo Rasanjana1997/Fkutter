@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:application1/custom_widgets/profile_button.dart';
+import 'build_pc.dart';
 
 class UserHomePage extends StatefulWidget {
   @override
@@ -235,7 +236,7 @@ class _UserHomePageState extends State<UserHomePage> {
                     iconData: Icons.computer,
                     string: 'Build A PC',
                     onPressed: (){
-                      print('Button 1');
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => AddBuildClass()));
                     },
                   ),
                   CustomButton(
@@ -280,9 +281,5 @@ class _UserHomePageState extends State<UserHomePage> {
         ],
       ),
     );
-
-    Widget customButton(BuildContext context){
-
-    }
   }
 }
